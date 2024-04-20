@@ -1,7 +1,7 @@
-# Finetuning RoBERTa with LoRA
+# Fine-tuning RoBERTa with LoRA
 
 ### Introduction
-This notebook goes over how to add LoRA layers into the RoBERTa base model and then finetune it on the Yelp Reviews polarity dataset. 
+This notebook goes over how to add LoRA layers into the RoBERTa base model and then fine-tune it on the Yelp Reviews polarity dataset. 
 
 LoRA (Low-Rank Adaption) is a PEFT (Parameter Efficient Fine Tuning) technique to fine-tune models while reducing the required amount of resources such as memory.
 
