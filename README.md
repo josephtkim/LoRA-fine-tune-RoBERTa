@@ -27,6 +27,6 @@ LoRA layers were only added to the Query and Value vectors in the Attention laye
 |   | Average Training Time <br>per Epoch (mm:ss) | 22:43 | 17:05 |
 |   | Test Accuracy | 97.3 | 96.2 |
 
-The model with LoRA has about 210 times fewer trainable parameters than the fully fine-tuned model, greatly reducing computational costs.
+The model with LoRA has about 200 times fewer trainable parameters than the fully fine-tuned model, greatly reducing computational costs.
 
 It is also 25% faster to train than the fully fine-tuned model, while only having 1.1% less accuracy after 3 epochs.
