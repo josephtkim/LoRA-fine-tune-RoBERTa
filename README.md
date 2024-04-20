@@ -3,7 +3,7 @@
 ### Introduction
 This notebook goes over how to add LoRA layers into the RoBERTa base model and then fine-tune it on the Yelp Reviews polarity dataset. 
 
-LoRA (Low-Rank Adaption) is a PEFT (Parameter Efficient Fine Tuning) technique to fine-tune models while reducing the required amount of resources such as memory.
+LoRA (Low-Rank Adaption) is a PEFT (Parameter Efficient Fine Tuning) technique to fine-tune models while reducing the required resources such as memory.
 
 LoRA Paper: https://arxiv.org/abs/2106.09685  
 RoBERTa base model: https://huggingface.co/FacebookAI/roberta-base  
@@ -27,6 +27,6 @@ LoRA layers were only added to the Query and Value vectors in the Attention laye
 |   | Average Training Time <br>per Epoch (mm:ss) | 22:43 | 17:05 |
 |   | Test Accuracy | 97.3 | 96.2 |
 
-LoRA has about 210 times less trainable parameters than the fully fine-tuned model, which greatly reduces the computational costs.
+The model with LoRA has about 210 times fewer trainable parameters than the fully fine-tuned model, greatly reducing computational costs.
 
-The training time is also 25% faster than the fully fine-tuned model, while only losing about 1.1% accuracy after 3 epochs. 
+It is also 25% faster to train than the fully fine-tuned model, while only having 1.1% less accuracy after 3 epochs.
